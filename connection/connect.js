@@ -8,7 +8,10 @@ const dbConnect = async (dbms) => {
     console.log(`connectin established.....`)
         
     } catch (error) {
-        console.log(error)
+        console.log({
+            msg:`oops unable to connect`,
+            err:error
+        })
         
     }    
 
